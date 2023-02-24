@@ -1,7 +1,15 @@
-*,
-html{
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-container {
@@ -11,11 +19,11 @@ html{
 }
 
 #logo {
+    /* background: cadetblue; */
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: cadetblue; */
-    width: 10%;
+    width: 20%;
 }
 
 .navbar-container {
@@ -24,7 +32,7 @@ html{
     justify-content: right;
     align-items: center;
     height: 100%;
-    width: 90%;
+    width: 80%;
 }
 
 ul {
@@ -37,9 +45,62 @@ li {
     margin: 5px;
 }
 
+.container-artikel {
+    /* background-color: bisque; */
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .artikel-card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+  }
+  
+  .card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 50px;
+  }
+  
+  .artikel-title {
+    margin-bottom: 10px;
+  }
+
+  .artikel-title a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .card-body p {
+    font-size: 13px;
+    margin: 0 0 0px;
+  }
+
+  .footer-container {
+    display: flex;
+    width: 100%;
+}
+
 #footer-copyright {
     display: flex;
     height: 10vh;
+    width: 100%;
     align-items: center;
     justify-content: center;
     background: blueviolet;
