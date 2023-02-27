@@ -13,6 +13,7 @@ body {
 }
 
 .header-container {
+    /* background-color: #e21f1f; */
     display: flex;
     width: 100%;
     height: 10vh;
@@ -36,7 +37,7 @@ body {
 }
 
 ul {
-    display: flex;
+  display: flex;
 }
 
 li {
@@ -45,10 +46,122 @@ li {
     margin: 5px;
 }
 
+.produk-container {
+  /* background-color: #cec863; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produk-card {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.produk-card .produk-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.produk-card .produk-circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(119, 198, 119);
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+}
+
+.produk-card:hover .produk-circle::before {
+  background: #0065c3;
+  clip-path: circle(400px at center);
+}
+
+.produk-card .produk-content{
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5ms;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.produk-card:hover .produk-content {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.75s;
+}
+
+.produk-card .produk-content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 5px;
+}
+
+.produk-card .produk-content h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.produk-card .produk-content p {
+  color: #fff;
+}
+
+.produk-card .produk-content a {
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.5ms;
+}
+
+.produk-card img {
+  position: absolute;
+  size: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 340px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.produk-card:hover img {
+  left: 75%;
+  height: 300px;
+}
+
 .container-artikel {
     /* background-color: bisque; */
     display: flex;
-    width: 1040px;
+    width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-family: "Roboto", sans-serif;
