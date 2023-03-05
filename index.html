@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quaya Ambarawa</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/script.js"></script>
 </head>
 <body>
     <!-- HEADER START -->
     <div class="header-container">
-        <div id="logo">
-            <a href="#"><img width="90" src="/img/logo.png" alt="logo"></a>
+        <div class="navbar-wrapper">
+            <nav class="navbar-main">
+                <div class="navbar-logo">
+                    <a href="#" class="logo"><img src="/img/logo.png" width="104px" alt="logo"></a>
+                </div>
+                <input type="checkbox" name="" id="navbar-toggle">
+                <label for="navbar-toggle"><i class="material-icons">menu</i></label>
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#">Produk</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav class="navbar-container">
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="#">Produk</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </nav>
     </div>
     <!-- HEADER END -->
 
