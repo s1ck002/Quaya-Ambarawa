@@ -21,18 +21,16 @@ body {
   /* width: 100%; */
   max-width: 1000px;
   margin: 0 auto;
-  /* padding: 1rem; */
 }
-.navbar-main  {
+.navbar-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   /* background-color: hsl(283, 100%, 13%); */
   padding: 1rem 1.5rem;
-  /* border-radius: .4rem; */
 }
-.navbar-main  ul {
+.navbar-main ul {
   list-style: none;
   display: flex;
   gap: 3rem;
@@ -46,32 +44,31 @@ body {
   color: lightgreen;
   text-decoration-line: overline;
   transition: 0.5s;
-  font-size: 150%;
 }
-.navbar-main  #navbar-toggle,
-.navbar-main  label {
+.navbar-main #navbar-toggle,
+.navbar-main label {
   display: none;
 }
 .material-icons {
   color: green;
 }
 @media (max-width: 40.625em) {
-  .navbar-main  .navbar-menu {
+  .navbar-main .navbar-menu {
     width: 100%;
     height: 0;
     overflow: hidden;
   }
-  .navbar-main  ul {
+  .navbar-main ul {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0;
   }
-  .navbar-main  label {
+  .navbar-main label {
     display: inline-flex;
     color: white;
     cursor: pointer;
   }
-  .navbar-main  #navbar-toggle:checked ~ .navbar-menu {
+  .navbar-main #navbar-toggle:checked ~ .navbar-menu {
     height: 100%;
   }
 }
@@ -217,14 +214,72 @@ body {
   font-size: 13px;
   margin: 0 0 0px;
 }
+
 .footer-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
+}
+#socials {
+  display: flex;
+  margin: 3vh 0 1vh;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons li {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.social-icons li a {
+  font-size: 16px;
+  display: block;
+  line-height: 38px;
+  position: relative;
+  top: 1px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.social-icons li a i {
+  font-size: 1.3em;
+  vertical-align: -0.06em;
+}
+.youtube a:hover {
+  transition: 0.5s;
+  background: #ff0000;
+}
+.twitter a:hover {
+  transition: 0.5s;
+  background: #1d9bf0;
+}
+.whatsapp a:hover {
+  transition: 0.5s;
+  background: #25d366;
+}
+.facebook a:hover {
+  transition: 0.5s;
+  background: #3b5998;
+}
+/* !!need transition */
+.instagram a:hover {
+  transition: 0.5s;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
 #footer-copyright {
   display: flex;
   height: 10vh;
-  width: 100%;
   align-items: center;
   justify-content: center;
   background: blueviolet;
